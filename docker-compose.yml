@@ -1,0 +1,12 @@
+version: '3'
+services:
+  tiddlyserver:
+    build: global
+    image: global
+    container_name: global
+    ports:
+      - 8080:80
+    volumes:
+      - ./data:/data
+      - ./data/html:/var/www/html
+    restart: always
